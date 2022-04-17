@@ -1,0 +1,51 @@
+{
+  "Packages":
+      {
+        "package_icon_xpath": "(//android.widget.ImageView[@content-desc=\"iconEvent\"])[5]",
+        "package_filter_id": "com.clubautomation.club.automation.debug:id/menuFilter",
+        "package_filter_title_xpath": "//android.widget.TextView[contains(@text,'Filters')]",
+        "package_filter_title_id": "com.clubautomation.club.automation.debug:id/textViewTitle",
+        "package_location_xpath": "//android.widget.TextView[contains(@text,'LOCATION')]",
+        "package_slctloc_id": "com.clubautomation.club.automation.debug:id/cb_location",
+        "package_navigateup_xpath": "//android.widget.ImageButton[@content-desc=\"Navigate up\"]",
+        "package_category_xpath": "//android.widget.TextView[contains(@text,'CATEGORY')]",
+        "package_slctcat_id": "com.clubautomation.club.automation.debug:id/cb_category",
+        "package_anytype_xpath": "//android.widget.TextView[contains(@text,'Any type')]",
+        "package_privatetype_xpath": "//android.widget.TextView[contains(@text,'Private lesson')]",
+        "package_group_xpath": "//android.widget.TextView[contains(@text,'Group class')]",
+        "package_grptype_xpath": "//android.widget.TextView[contains(@text,'Group class')]",
+        "package_amtofsession_xpath": "//android.widget.TextView[contains(@text,'Any']",
+        "package_sessiondurn_1_xpath": "//android.widget.TextView[contains(@text,'Any']",
+        "package_sessiondurn_2_xpath": "//android.widget.TextView[contains(@text,'0-30 min']",
+        "package_sessiondurn_id": "com.clubautomation.club.automation.debug:id/tv_text",
+        "package_participantcount_1_xpath": "//android.widget.TextView[contains(@text,'Any']",
+        "package_participantcount_2_xpath": "//android.widget.TextView[contains(@text,'1 on 1']",
+        "package_participantcount_id": "com.clubautomation.club.automation.debug:id/tv_text",
+        "package_reset_id": "com.clubautomation.club.automation.debug:id/menuReset",
+        "package_showrslt_id": "com.clubautomation.club.automation.debug:id/btnResults",
+        "package_slctpkg_id": "com.clubautomation.club.automation.debug:id/linearLayoutItemContainer",
+        "package_buybutton_id": "com.clubautomation.club.automation.debug:id/btnBuy",
+        "package_nextbutton": "com.clubautomation.club.automation.debug:id/buttonNext",
+        "package_title_id": "com.clubautomation.club.automation.debug:id/textViewTitle",
+        "package_tennis_catgry_xpath": "//android.widget.TextView[contains(@text,'Tennis')]",
+        "package_buy_button": "//android.widget.TextView[contains(@text,'BUY')]",
+        "package_success_button": "com.clubautomation.club.automation.debug:id/buttonSuccess",
+        "package_active_packages_screen": "com.clubautomation.club.automation.debug:id/tv_activeInactive",
+        "package_paybutton_id": "com.clubautomation.club.automation.debug:id/buttonPackageCheckoutPayText",
+        "package_privatelessons": "//android.widget.TextView[contains(@text,'Tennis - Private Lesson')]",
+        "package_Groupclass": "//android.widget.TextView[contains(@text,'Tennis - Group Class')]"
+      },
+
+      "MyPackages":
+      {
+        "MyPackages_link": "//android.widget.TextView[contains(@text,'My Packages')]",
+        "Active_tab": "//android.widget.TextView[contains(@text,'Active')]",
+        "Used_or_Expired_Tab": "//androidx.appcompat.app.ActionBar.Tab[@content-desc=\"Used or Expired\"]",
+        "Paid_status": "//android.widget.TextView[contains(@text,'PAID')]",
+        "Package1_Active": "com.clubautomation.club.automation.debug:id/container_PackageItem",
+        "Package_History_Header": "//android.widget.TextView[contains(@text,'Package History')]",
+        "BlankPageLabel": "com.clubautomation.club.automation.debug:id/tv_your_packages",
+        "BlankPageText": "com.clubautomation.club.automation.debug:id/empty_package_message"
+      }
+
+  }

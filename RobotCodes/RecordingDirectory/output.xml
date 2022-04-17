@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.10.1 on win32)" generated="20220218 12:28:11.221" rpa="false" schemaversion="2">
+<suite id="s1" name="TestCase1" source="C:\Users\Global\PycharmProjects\pythonProject2\RecordingDirectory\TestCase1.robot">
+<test id="s1-t1" name="Test case">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220218 12:28:11.446" level="INFO">Opening browser 'Chrome' to base url 'https://www.thetestingworld.com/testings/'.</msg>
+<status status="PASS" starttime="20220218 12:28:11.446" endtime="20220218 12:28:17.103"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@name="fld_username"]</arg>
+<arg>Testing</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220218 12:28:17.104" level="INFO">Typing text 'Testing' into text field '//input[@name="fld_username"]'.</msg>
+<status status="PASS" starttime="20220218 12:28:17.104" endtime="20220218 12:28:17.235"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@name="fld_email"]</arg>
+<arg>testing2world.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220218 12:28:17.235" level="INFO">Typing text 'testing2world.com' into text field '//input[@name="fld_email"]'.</msg>
+<status status="PASS" starttime="20220218 12:28:17.235" endtime="20220218 12:28:17.326"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@name="fld_password"]</arg>
+<arg>***</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220218 12:28:17.327" level="INFO">Typing text '***' into text field '//input[@name="fld_password"]'.</msg>
+<status status="PASS" starttime="20220218 12:28:17.327" endtime="20220218 12:28:17.408"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@name="fld_cpassword"]</arg>
+<arg>***</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220218 12:28:17.409" level="INFO">Typing text '***' into text field '//input[@name="fld_cpassword"]'.</msg>
+<status status="PASS" starttime="20220218 12:28:17.409" endtime="20220218 12:28:17.489"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath=(//a[@href="#"])[5]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220218 12:28:17.490" level="INFO">Clicking link 'xpath=(//a[@href="#"])[5]'.</msg>
+<msg timestamp="20220218 12:28:17.657" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220218 12:28:17.666" level="FAIL">Link with locator 'xpath=(//a[@href="#"])[5]' not found.</msg>
+<status status="FAIL" starttime="20220218 12:28:17.490" endtime="20220218 12:28:17.666"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@name="phone"]</arg>
+<arg>123456</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220218 12:28:17.666" endtime="20220218 12:28:17.666"/>
+</kw>
+<status status="FAIL" starttime="20220218 12:28:11.446" endtime="20220218 12:28:17.666">Link with locator 'xpath=(//a[@href="#"])[5]' not found.</status>
+</test>
+<status status="FAIL" starttime="20220218 12:28:11.222" endtime="20220218 12:28:17.668"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TestCase1">TestCase1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

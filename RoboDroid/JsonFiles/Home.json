@@ -1,0 +1,7 @@
+{
+  "Home": {
+    "Home_icon_xpath": "//android.widget.FrameLayout[@content-desc=\"Home\"]/android.view.ViewGroup/android.widget.TextView",
+    "packages_xpath": "//android.widget.TextView[@text = 'Packages']",
+    "Profile_icon_xpath": "//android.widget.TextView[@text = 'Profile']"
+  }
+}

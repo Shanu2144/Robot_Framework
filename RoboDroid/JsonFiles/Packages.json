@@ -1,0 +1,19 @@
+{
+  "Packages":
+      {
+        "package_filter_id": "com.clubautomation.club.automation.debug:id/menuFilter",
+        "package_location_xpath": "//android.widget.TextView[contains(@text,'LOCATION')]",
+        "package_slctloc_id": "com.clubautomation.club.automation.debug:id/cb_location",
+        "package_navigateup_xpath": "//android.widget.ImageButton[@content-desc=\"Navigate up\"]",
+        "package_category_xpath": "//android.widget.TextView[contains(@text,'CATEGORY')]",
+        "package_slctcat_id": "com.clubautomation.club.automation.debug:id/cb_category",
+        "package_privatetype_xpath": "//android.widget.TextView[contains(@text,'Private lesson')]",
+        "package_showrslt_id": "com.clubautomation.club.automation.debug:id/btnResults",
+        "package_slctpkg_id": "com.clubautomation.club.automation.debug:id/linearLayoutItemContainer",
+        "package_buybutton_id": "com.clubautomation.club.automation.debug:id/btnBuy",
+        "package_nextbutton": "com.clubautomation.club.automation.debug:id/buttonNext",
+        "package_buy_button": "//android.widget.TextView[contains(@text,'BUY')]",
+        "package_success_button": "com.clubautomation.club.automation.debug:id/buttonSuccess",
+        "package_paybutton_id": "com.clubautomation.club.automation.debug:id/buttonPackageCheckoutPayText"
+      }
+  }

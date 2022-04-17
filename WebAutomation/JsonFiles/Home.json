@@ -1,0 +1,19 @@
+{
+  "Home": {
+    "Home_menu": "//a[contains(text(),'Home')]",
+    "Welcome_text": "//h1[contains(text(),'Welcome')]",
+    "Logout": "//a[@class='logout']",
+    "View_my_info": "//a[@id='menu_my_information']",
+    "Buy_Gift_Cards": "//a[@id='menu_buy_gift_cards']",
+    "Register_for_Classes": "//a[@id='menu_register_for_classes']",
+    "Group_Activities": "//a[@id='menu_group_activities']",
+    "View_My_Statement": "//a[@id='menu_statement']",
+    "Pay_My_Bill": "//a[@id='menu_pay_my_bill']",
+    "Account_Access": "//a[@id='menu_account_access']",
+    "Packages": "//a[@id='menu_packages']",
+    "Contact_Us": "//a[@id='menu_contact']",
+    "Buy_A_Membership": "//a[@id='menu_buy_a_membership']",
+    "Notifications": "//a[@id='menu_notifications']",
+    "Reserve_a_court": "//a[@id='menu_reserve_a_court']"
+  }
+}

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.10.1 on win32)" generated="20220411 16:11:05.609" rpa="false" schemaversion="2">
+<suite id="s1" name="Login" source="C:\Users\Global\PycharmProjects\WebAutomation\TestCases\Login.robot">
+<test id="s1-t1" name="TC_01_Login">
+<kw name="Read_Element_Locator" library="Library">
+<var>${Register_for_Classes}</var>
+<arg>RegisterForClasses.Register_for_Classes</arg>
+<arg>../JsonFiles/RegisterForClasses.json</arg>
+<kw name="Read Locator From Json" library="Locators">
+<var>${result}</var>
+<arg>${JsonPath}</arg>
+<arg>${Filepath}</arg>
+<msg timestamp="20220411 16:11:06.121" level="INFO">${result} = //a[@id='menu_register_for_classes']</msg>
+<status status="PASS" starttime="20220411 16:11:06.121" endtime="20220411 16:11:06.121"/>
+</kw>
+<msg timestamp="20220411 16:11:06.121" level="INFO">${Register_for_Classes} = //a[@id='menu_register_for_classes']</msg>
+<status status="PASS" starttime="20220411 16:11:06.121" endtime="20220411 16:11:06.121"/>
+</kw>
+<kw name="Read_Element_Locator" library="Library">
+<var>${Classes_list}</var>
+<arg>RegisterForClasses.Classes_list</arg>
+<arg>../JsonFiles/RegisterForClasses.json</arg>
+<kw name="Read Locator From Json" library="Locators">
+<var>${result}</var>
+<arg>${JsonPath}</arg>
+<arg>${Filepath}</arg>
+<msg timestamp="20220411 16:11:06.137" level="INFO">${result} = //a[@class='row_link']</msg>
+<status status="PASS" starttime="20220411 16:11:06.121" endtime="20220411 16:11:06.137"/>
+</kw>
+<msg timestamp="20220411 16:11:06.137" level="INFO">${Classes_list} = //a[@class='row_link']</msg>
+<status status="PASS" starttime="20220411 16:11:06.121" endtime="20220411 16:11:06.137"/>
+</kw>
+<kw name="Read_Element_Locator" library="Library">
+<var>${Welcome_text}</var>
+<arg>Home.Welcome_text</arg>
+<arg>../JsonFiles/Home.json</arg>
+<kw name="Read Locator From Json" library="Locators">
+<var>${result}</var>
+<arg>${JsonPath}</arg>
+<arg>${Filepath}</arg>
+<msg timestamp="20220411 16:11:06.137" level="INFO">${result} = //h1[contains(text(),'Welcome')]</msg>
+<status status="PASS" starttime="20220411 16:11:06.137" endtime="20220411 16:11:06.137"/>
+</kw>
+<msg timestamp="20220411 16:11:06.137" level="INFO">${Welcome_text} = //h1[contains(text(),'Welcome')]</msg>
+<status status="PASS" starttime="20220411 16:11:06.137" endtime="20220411 16:11:06.137"/>
+</kw>
+<kw name="Read_Element_Locator" library="Library">
+<var>${Logout}</var>
+<arg>Home.Logout</arg>
+<arg>../JsonFiles/Home.json</arg>
+<kw name="Read Locator From Json" library="Locators">
+<var>${result}</var>
+<arg>${JsonPath}</arg>
+<arg>${Filepath}</arg>
+<msg timestamp="20220411 16:11:06.137" level="INFO">${result} = //a[@class='logout']</msg>
+<status status="PASS" starttime="20220411 16:11:06.137" endtime="20220411 16:11:06.137"/>
+</kw>
+<msg timestamp="20220411 16:11:06.137" level="INFO">${Logout} = //a[@class='logout']</msg>
+<status status="PASS" starttime="20220411 16:11:06.137" endtime="20220411 16:11:06.137"/>
+</kw>
+<kw name="Read_Element_Locator" library="Library">
+<var>${Register_for_Classes}</var>
+<arg>Home.Register_for_Classes</arg>
+<arg>../JsonFiles/Home.json</arg>
+<kw name="Read Locator From Json" library="Locators">
+<var>${result}</var>
+<arg>${JsonPath}</arg>
+<arg>${Filepath}</arg>
+<msg timestamp="20220411 16:11:06.137" level="INFO">${result} = //a[@id='menu_register_for_classes']</msg>
+<status status="PASS" starttime="20220411 16:11:06.137" endtime="20220411 16:11:06.137"/>
+</kw>
+<msg timestamp="20220411 16:11:06.137" level="INFO">${Register_for_Classes} = //a[@id='menu_register_for_classes']</msg>
+<status status="PASS" starttime="20220411 16:11:06.137" endtime="20220411 16:11:06.137"/>
+</kw>
+<kw name="Read_Element_Locator" library="Library">
+<var>${Sign_up}</var>
+<arg>RegisterForClasses.Sign_up</arg>
+<arg>../JsonFiles/RegisterForClasses.json</arg>
+<kw name="Read Locator From Json" library="Locators">
+<var>${result}</var>
+<arg>${JsonPath}</arg>
+<arg>${Filepath}</arg>
+<msg timestamp="20220411 16:11:06.137" level="INFO">${result} = //button[contains(text(),'Sign Up')]</msg>
+<status status="PASS" starttime="20220411 16:11:06.137" endtime="20220411 16:11:06.137"/>
+</kw>
+<msg timestamp="20220411 16:11:06.137" level="INFO">${Sign_up} = //button[contains(text(),'Sign Up')]</msg>
+<status status="PASS" starttime="20220411 16:11:06.137" endtime="20220411 16:11:06.137"/>
+</kw>
+<kw name="user_open_browser" library="Library">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220411 16:11:06.137" level="INFO">Opening browser 'chrome' to base url 'https://ls.clubautomation.com/'.</msg>
+<status status="PASS" starttime="20220411 16:11:06.137" endtime="20220411 16:11:12.691"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220411 16:11:12.691" endtime="20220411 16:11:12.822"/>
+</kw>
+<status status="PASS" starttime="20220411 16:11:06.137" endtime="20220411 16:11:12.822"/>
+</kw>
+<kw name="login" library="Library">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:login</arg>
+<arg>skumar04</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220411 16:11:12.822" level="INFO">Typing text 'skumar04' into text field 'id:login'.</msg>
+<status status="PASS" starttime="20220411 16:11:12.822" endtime="20220411 16:11:13.009"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:password</arg>
+<arg>Test@123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220411 16:11:13.009" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg timestamp="20220411 16:11:13.059" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220411 16:11:13.126" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220411 16:11:13.009" endtime="20220411 16:11:13.126"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id:loginButton</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220411 16:11:13.126" level="INFO">Clicking button 'id:loginButton'.</msg>
+<status status="PASS" starttime="20220411 16:11:13.126" endtime="20220411 16:11:13.216"/>
+</kw>
+<status status="PASS" starttime="20220411 16:11:12.822" endtime="20220411 16:11:13.216"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${Welcome_text}</arg>
+<arg>20</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220411 16:11:13.248" level="INFO">Current page contains element '//h1[contains(text(),'Welcome')]'.</msg>
+<status status="PASS" starttime="20220411 16:11:13.224" endtime="20220411 16:11:13.248"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${Register_for_Classes}</arg>
+<arg>30</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220411 16:11:13.248" endtime="20220411 16:11:18.454"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${Register_for_Classes}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220411 16:11:18.454" level="INFO">Clicking link '//a[@id='menu_register_for_classes']'.</msg>
+<status status="PASS" starttime="20220411 16:11:18.454" endtime="20220411 16:11:19.824"/>
+</kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>${Class_list}</var>
+<arg>${Classes_list}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20220411 16:11:19.848" level="INFO">${Class_list} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="6cc9418d8f7bf03bd597bb2670ae40c3", element="5ef4c4b0-9147-4562-bc98-4a4a3fba1a81")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20220411 16:11:19.824" endtime="20220411 16:11:19.848"/>
+</kw>
+<for flavor="IN">
+<var>${i}</var>
+<value>${Class_list}</value>
+<iter>
+<var name="${i}">[&lt;selenium.webdriver.remote.webelement.WebElement (session="6cc9418d8f7bf03bd597bb2670ae40c3", element="5ef4c4b0-9147-4562-bc98-4a4a3fba1a81")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</var>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${i}[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220411 16:11:19.848" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="6cc9418d8f7bf03bd597bb2670ae40c3", element="d6d52546-9c79-4109-b5d5-506c4f667200")&gt;'.</msg>
+<status status="PASS" starttime="20220411 16:11:19.848" endtime="20220411 16:11:21.048"/>
+</kw>
+<status status="PASS" starttime="20220411 16:11:19.848" endtime="20220411 16:11:21.048"/>
+</iter>
+<status status="PASS" starttime="20220411 16:11:19.848" endtime="20220411 16:11:21.048"/>
+</for>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${Sign_up}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220411 16:11:21.048" level="INFO">Clicking button '//button[contains(text(),'Sign Up')]'.</msg>
+<status status="PASS" starttime="20220411 16:11:21.048" endtime="20220411 16:11:21.156"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${Logout}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220411 16:11:21.156" endtime="20220411 16:11:21.180"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Logout}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220411 16:11:21.180" level="INFO">Clicking element '//a[@class='logout']'.</msg>
+<status status="PASS" starttime="20220411 16:11:21.180" endtime="20220411 16:11:22.851"/>
+</kw>
+<kw name="user_close_browser" library="Library">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220411 16:11:22.851" endtime="20220411 16:11:25.118"/>
+</kw>
+<status status="PASS" starttime="20220411 16:11:22.851" endtime="20220411 16:11:25.118"/>
+</kw>
+<doc>Login to Web Application</doc>
+<status status="PASS" starttime="20220411 16:11:06.121" endtime="20220411 16:11:25.118"/>
+</test>
+<status status="PASS" starttime="20220411 16:11:05.625" endtime="20220411 16:11:25.118"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Login">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,15 @@
+{
+  "Home": {
+    "Home_icon_xpath": "//android.widget.FrameLayout[@content-desc=\"Home\"]/android.view.ViewGroup/android.widget.TextView",
+    "What_are_looking_for_id": "com.clubautomation.club.automation.debug:id/tv_looking_for",
+    "What_are_looking_for_class_xpath": "//android.widget.TextView[@text = 'Classes']",
+    "What_are_looking_for_programs_xpath": "//android.widget.TextView[@text= 'Programs']",
+    "What_are_looking_for_packages_xpath": "//android.widget.TextView[@text = 'Packages']",
+    "What_are_looking_for_reservations_xpath": "//android.widget.TextView[@text = 'Reservations']",
+    "What_are_looking_for_viewAll_button_id": "com.clubautomation.club.automation.debug:id/tv_viewAll",
+    "What_are_looking_for_icons_id": "com.clubautomation.club.automation.debug:id/iv_feature",
+    "home_link_id": "com.clubautomation.club.automation.debug:id/icon",
+    "home_enrollcancel_id": "com.clubautomation.club.automation.debug:id/md_buttonDefaultNegative",
+    "home_link_xpath": "//android.widget.FrameLayout[@content-desc=\"Home\"]/android.view.ViewGroup/android.widget.TextView"
+  }
+}

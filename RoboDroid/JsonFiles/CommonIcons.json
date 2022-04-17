@@ -1,0 +1,8 @@
+{
+  "CommonIcons" :
+   {
+     "Back_chevron_xpath":  "//android.widget.ImageButton[@content-desc=\"Navigate up\"]",
+     "Home":  "//android.widget.FrameLayout[@content-desc=\"Home\"]",
+     "Explore":  "//android.widget.FrameLayout[@content-desc=\"Explore\"]"
+   }
+}

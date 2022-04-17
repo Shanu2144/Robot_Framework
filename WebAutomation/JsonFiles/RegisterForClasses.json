@@ -1,0 +1,10 @@
+{
+  "RegisterForClasses" :
+   {
+     "Register_for_Classes": "//a[@id='menu_register_for_classes']",
+     "Select_Facilities": "//select[@name='facilities']",
+     "Sign_up": "//button[contains(text(),'Sign Up')]",
+     "Classes_list": "//a[@class='row_link']"
+
+   }
+}

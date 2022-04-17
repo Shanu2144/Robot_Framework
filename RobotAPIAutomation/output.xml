@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.10.1 on win32)" generated="20220412 09:58:55.040" rpa="false" schemaversion="2">
+<suite id="s1" name="TC 01 Get Request" source="C:\Users\Global\PycharmProjects\RobotAPIAutomation\TC_01_Get_Request.robot">
+<test id="s1-t1" name="TC_01_Get_Request">
+<kw name="Create Session" library="RequestsLibrary">
+<arg>Get_Student_Details</arg>
+<arg>${Base_URL}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<msg timestamp="20220412 09:58:55.149" level="INFO">Creating Session using : alias=Get_Student_Details, url=https://ls.clubautomation.com/, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20220412 09:58:55.149" endtime="20220412 09:58:55.149"/>
+</kw>
+<kw name="GET On Session" library="RequestsLibrary">
+<var>${response}</var>
+<arg>Get_Student_Details</arg>
+<arg>/account_balance</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<msg timestamp="20220412 09:58:56.899" level="INFO">GET Request : url=https://ls.clubautomation.com/account_balance 
+ path_url=/account_balance 
+ headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20220412 09:58:56.899" level="INFO">GET Response : url=https://ls.clubautomation.com/account_balance 
+ status=200, reason=OK 
+ headers={'Content-Type': 'text/html; charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Cache-Control': 'no-store, no-cache, must-revalidate', 'Date': 'Tue, 12 Apr 2022 04:28:56 GMT', 'Expires': 'Thu, 19 Nov 1981 08:52:00 GMT', 'Pragma': 'no-cache', 'Server-Timing': 'intid;desc=5b5313afe6a9466b', 'Set-Cookie': 'PHPSESSID=t9kmaclmq4hv5vkvqr122t1sne; path=/; secure; HttpOnly', 'Strict-Transport-Security': 'max-age=15552000', 'X-Frame-Options': 'SAMEORIGIN', 'Content-Encoding': 'gzip'} 
+ body=&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;&lt;html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /&gt;
+&lt;title&gt;Windy City Athletic Club&lt;/title&gt;
+&lt;style type="text/css"&gt;
+    .ca-signin .login-hero {
+        background-image: url('https://d2d4uqjehc1gxa.cloudfront.net/3cacca2b9903c310cf514d96c90a8122/login/d49384d2df08be03d652b2d3b26dcc6f');
+    }
+
+    .ca-signin .ca-ui-text-input .text-input {
+        caret-color: #13bf93;
+    }
+
+    .ca-signin .ca-ui-link {
+        color: #13bf93;
+        margin: 0;
+        padding: 0;
+    }
+
+    .ca-signin .ca-ui-btn.themed-btn {
+        border-color: #13bf93;
+        width: 100%;
+    }
+
+    .ca-signin .ca-ui-btn.themed-btn,
+    .ca-signin .ca-ui-btn.themed-btn:active,
+    .ca-signin .ca-ui-btn.themed-btn:hover {
+        background-color: #13bf93;
+    }
+
+    .ca-signin .ca-ui-btn.themed-btn:disabled {
+        background-color: #d8d8d8;
+        border-color: #d8d8d8;
+    }
+
+    .ca-signin .ca-ui-btn.ca-ui-btn-medium:hover {
+        filter: brightness(105%);
+    }
+
+    .ca-signin .ca-ui-btn.ca-ui-btn-medium.link:hover {
+      filter: brightness(98%);
+    }
+
+    .ca-signin input {
+        height: 42px;
+    }
+
+    .ca-signin .ca-ui-btn.ca-ui-btn-medium.link {
+        color: #13bf93;
+    }
+&lt;/style&gt;&lt;script type="text/javascript" src="/assets_dist/jquery-tooling.93fea74f4507664f6d87.js?v=72fd4c023f0abd8574bb066fe522e2f3"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="/assets_dist/signin.f1e0be3325cf8706f24d.js?v=c90487be8d49de27a3ad154095317f70"&gt;&lt;/script&gt;
+&lt;link href="/assets_dist/jquery-tooling.8f0ad6aba797addb252c.css?v=c78840f53eb50c3aa08fb0f670c94ce4" media="screen" rel="stylesheet" type="text/css" /&gt;
+&lt;link href="/assets_dist/signin.f0beaad308491d0b77b4.css?v=04224f185050ec5f05bda80719bbb502" media="screen" rel="stylesheet" type="text/css" /&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div class="ca-signin ca-signin-login-wrapper"&gt;
+        &lt;header role="banner" class="header-wrapper"&gt;
+    &lt;img data-testid="clubLogo" src="https://d2d4uqjehc1gxa.cloudfront.net/3cacca2b9903c310cf514d96c90a8122/logo/resized_logo.6241eb4f76271.png" alt="Windy City Athletic Club" onerror="this.style.display='none'" /&gt;
+    &lt;p data-testid="clubName" tabindex="0"&gt;
+        Windy City Athletic Club    &lt;/p&gt;
+&lt;/header&gt;        &lt;div class="login-hero ca-ui-bg-x-light-gray"&gt;&lt;/div&gt;
+        &lt;section class="login-container"&gt;
+            &lt;div class="create-account"&gt;
+                &lt;div class="create-account-text"&gt;
+                    &lt;p class="ca-ui-text-dark-gray"&gt;
+                        First time here?
+                    &lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class="create-account-link" tabindex="0"&gt;
+                    &lt;a href="./member-portal/create-account" class="ca-ui-link" data-testid="registerNow"&gt;
+                        Access My Account
+                    &lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="login-form-container"&gt;
+                &lt;h1 data-testid="titlePrimary" class="ca-ui-display ca-ui-text-secondary"&gt;
+                    Welcome!                &lt;/h1&gt;
+                &lt;h2 data-testid="titleSecondary" class="ca-ui-text-dark-gray ca-ui-text-helper"&gt;
+                    Login to your account                &lt;/h2&gt;
+                &lt;form id="caSignInLoginForm"&gt;
+                    &lt;div class="ca-ui-text-input input-wrapper"&gt;
+                        &lt;label for="login"&gt;
+                            &lt;span class="ca-ui-input-label ca-ui-text-medium-dark-gray"&gt;Username&lt;/span&gt;
+                            &lt;input class="text-input" maxlength="100" type="text" name="login" id="login" aria-label="Please enter a username" aria-invalid="false" autocomplete="off" data-testid="loginAccountUsername" tabindex="0" value="" required&gt;
+                        &lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div class="ca-ui-text-input"&gt;
+                        &lt;label for="password"&gt;
+                            &lt;span class="ca-ui-input-label ca-ui-text-medium-dark-gray"&gt;Password&lt;/span&gt;
+                            &lt;input class="text-input" maxlength="250" type="password" name="password" id="password" aria-invalid="false" autocomplete="off" data-testid="loginAccountPassword" tabindex="0" value="" required&gt;
+                        &lt;/label&gt;
+                    &lt;/div&gt;
+                    
+&lt;input type="hidden" name="login_token" value="81d1157cf56476a543ad0cd9a3d774e5" id="login_token" /&gt;                    &lt;div class="forgot-password-link" tabindex="0"&gt;
+                        &lt;a href="./forgot-password" class="ca-ui-link" data-testid="loginForgotPassword"&gt;
+                            Forgot password?
+                        &lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div class="ca-ui-login-button-wrapper"&gt;
+                        &lt;button class="ca-ui-btn ca-ui-btn-medium themed-btn" id="loginButton" tabindex="0" data-testid="loginFormSubmitButton" type="submit" aria-label="Press to login to your account with your username and password"&gt;
+                            Login
+                        &lt;/button&gt;
+                                            &lt;/div&gt;
+                &lt;/form&gt;
+            &lt;/div&gt;
+                    &lt;/section&gt;
+        &lt;footer class="ca-signin-footer"&gt;
+    &lt;p class="copyright ca-ui-text-dark-gray ca-ui-x-small"&gt;
+        &amp;#169; 2022 Powered by Club Automation
+    &lt;/p&gt;
+&lt;/footer&gt;    &lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt; 
+ </msg>
+<msg timestamp="20220412 09:58:56.899" level="INFO">C:\Users\Global\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py:1043: InsecureRequestWarning: Unverified HTTPS request is being made to host 'ls.clubautomation.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(</msg>
+<msg timestamp="20220412 09:58:56.899" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220412 09:58:55.149" endtime="20220412 09:58:56.899"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${response.status_code}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220412 09:58:56.899" endtime="20220412 09:58:56.899"/>
+</kw>
+<kw>
+<var>${response1}=</var>
+<var>${response.content}</var>
+<msg timestamp="20220412 09:58:56.899" level="FAIL">Keyword name cannot be empty.</msg>
+<status status="FAIL" starttime="20220412 09:58:56.899" endtime="20220412 09:58:56.899"/>
+</kw>
+<kw>
+<var>${json_response}=</var>
+<var>${response1.json()}</var>
+<status status="NOT RUN" starttime="20220412 09:58:56.899" endtime="20220412 09:58:56.899"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${json_response}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220412 09:58:56.899" endtime="20220412 09:58:56.899"/>
+</kw>
+<status status="FAIL" starttime="20220412 09:58:55.149" endtime="20220412 09:58:56.899">Keyword name cannot be empty.</status>
+</test>
+<status status="FAIL" starttime="20220412 09:58:55.040" endtime="20220412 09:58:56.899"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TC 01 Get Request">TC 01 Get Request</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

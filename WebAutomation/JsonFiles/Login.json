@@ -1,0 +1,10 @@
+{
+  "Login":
+    {
+      "username_textbox_id": "id:login",
+      "password_textbox_id": "id:password",
+      "login_button_id": "id:loginButton",
+      "Forgot_password": "//a[contains(text(),'Forgot password?')]"
+
+    }
+ }

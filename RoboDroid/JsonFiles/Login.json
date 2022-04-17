@@ -1,0 +1,9 @@
+{
+  "Login":
+    {
+      "username_textbox_xpath": "//android.widget.EditText [contains(@text,'USERNAME')]",
+      "password_textbox_xpath": "//android.widget.EditText [contains(@text,'PASSWORD')]",
+      "login_button_id": "com.clubautomation.club.automation.debug:id/buttonLogin",
+      "logout_xpath": "//android.widget.TextView[contains(@text,'Log Out')]"
+    }
+ }
