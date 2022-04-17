@@ -22,7 +22,7 @@ TC_01_Login
     FOR    ${i}    IN    ${Class_list}
     click element    ${i}[3]
     END
-    click button    ${Sign_up}
+    #click button    ${Sign_up}
 
     wait until page contains element    ${Logout}    20
     click element    ${Logout}
